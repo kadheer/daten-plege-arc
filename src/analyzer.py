@@ -15,7 +15,7 @@ def generate_report(df: pd.DataFrame, duplicates: pd.DataFrame, output_path: Pat
         f.write(f"Erstellt am: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write("=" * 60 + "\n\n")
 
-        # 1. Grundübersicht
+        """Grundübersicht"""
         f.write("1. BASIS-STATISTIK\n")
         f.write("-" * 40 + "\n")
         f.write(f"Gesamtanzahl Datensätze (nach Bereinigung): {len(df)}\n")
